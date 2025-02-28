@@ -11,7 +11,6 @@ Suite Setup            Open Browser                about:blank                 c
 Suite Teardown              Close All Browsers
 
 *** Test Cases ***
-SampleGitHub
 [Documentation]         Test Case created using the QEditor
     Login to Application
     ClickText    Contacts List
