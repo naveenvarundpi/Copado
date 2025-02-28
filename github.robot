@@ -6,6 +6,7 @@
 Library                     QForce
 Library                     Screenshot
 Resource                    TestCase/Login.robot
+Suite Setup            Open Browser                about:blank                 chrome
 Suite Teardown              Close All Browsers
 
 *** Test Cases ***
