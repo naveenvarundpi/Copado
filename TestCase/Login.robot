@@ -10,9 +10,5 @@ Login to Application
     TypeSecret        Password          Sud682keen739!
     
     ClickText          Log In to Sandbox
-*** Test Cases ***
-
-Login
-    [Documentation]    Test Case created using the QEditor
 
 
