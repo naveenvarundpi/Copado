@@ -14,6 +14,4 @@ Suite Teardown              Close All Browsers
 SampleGitHub
     [Documentation]         Test Case created using the QEditor
     Login to Application
-    ClickText               Cases List
-    ClickText               New Case
-    UseModal                On
+
