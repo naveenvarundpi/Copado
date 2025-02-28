@@ -4,8 +4,15 @@ Suite Setup            Open Browser                about:blank                 c
     
 *** Keywords ***
 Login to Application
-    [Documentation]    Test Case for login
-    GoTo               https://standardbank--bcwuat.sandbox.lightning.force.com/lightning
-    TypeText           Username                    hari.radhakrishnan@standardbank.co.za.bcwuat
-    TypeSecret         Password                    Sud682keen739!
+    [Documentation]   Test Case for login
+    GoTo               https://standardbankgroup.my.salesforce.com/ 
+    TypeText          Username          hari.radhakrishnan@standardbank.co.za.bcwsit
+    TypeSecret        Password          Sud682keen739!
+    
     ClickText          Log In to Sandbox
+*** Test Cases ***
+
+Login
+    [Documentation]    Test Case created using the QEditor
+
+
