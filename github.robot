@@ -4,18 +4,16 @@
 
 *** Settings ***
 Library                 QForce 
+Library     Screenshot
 Suite Setup             Open Browser    about:blank    chrome
+Resource     TestCase/Login.robot
 Suite Teardown          Close All Browsers
 
 *** Test Cases ***
 
 SampleGitHub
     [Documentation]    Test Case created using the QEditor
-
-     GoTo    https://standardbank--bcwuat.sandbox.lightning.force.com/lightning
-    TypeText    Username    hari.radhakrishnan@standardbank.co.za.bcwuat
-    TypeSecret    Password    Sud682keen739!
-    ClickText    Log In to Sandbox
-    LaunchApp    Cases
-    ClickText    Cases
+    Login to Application
+    ClickText    Cases     delay=5
     ClickText    New
+    UseModal    On
