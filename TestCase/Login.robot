@@ -2,7 +2,7 @@
 Library                QForce
 Suite Setup            Open Browser                about:blank                 chrome
     
-*** Test Cases ***
+*** Keywords ***
 Login to Application
     [Documentation]   Test Case for login
     GoTo              https://standardbank--sit.sandbox.lightning.force.com/lightning
