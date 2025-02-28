@@ -22,7 +22,6 @@ SampleGitHub
     ClickText    Next
     UseModal    Off
     TypeText    Subject    Sales
-
  
    
     
