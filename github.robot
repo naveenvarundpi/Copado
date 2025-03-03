@@ -11,7 +11,7 @@ Suite Setup            Open Browser                about:blank                 c
 Suite Teardown              Close All Browsers
 
 *** Test Cases ***
-Create Contacts
+Create Cases
 
     Login to Application
     ClickText    Cases List
@@ -23,6 +23,7 @@ Create Contacts
     TypeText    Subject    Sales
 
 *** Test Cases ***
+Edit Cases
     ClickText    Cases
     UseModal    Off
     ClickText    C-0026275776
