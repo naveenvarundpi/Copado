@@ -35,7 +35,7 @@ Edit Cases
     ClickText    Save
     #VerifyField    Case Number    C-0026275776    partial_match=True
     ${Case_Num}=          GetText      Case Number
-    Log                      ${Case_Number}
+    Log                      ${Case_Num}
     CloseBrowser
 
 *** Test Cases ***
