@@ -39,7 +39,9 @@ Edit Cases
 Search Cases
     Login to Application
     ClickText    Cases List
-    Input text     xpath=//input[@placeholder='Search this list...']    ${Case_Number} 
+    input_Text     Search this list    ${Case_Number}
+    
+    
     
 
 
