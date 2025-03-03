@@ -31,6 +31,8 @@ Edit Cases
     ClickText    Edit Case Origin
     PickList    Case Origin    Client Email
     ClickText    Save
+    ${Case_Number}=          GetText      xpath=(//span[@class='uiOutputText'])[3]
+    
 
 
  
