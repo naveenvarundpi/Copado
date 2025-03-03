@@ -12,7 +12,6 @@ Login to Application
     GoTo              https://standardbank--bcwuat.sandbox.lightning.force.com/lightning
     TypeText          Username          hari.radhakrishnan@standardbank.co.za.bcwuat
     TypeSecret        Password          Sud682keen739!
-    
     ClickText          ${Login_Button}
 
 
