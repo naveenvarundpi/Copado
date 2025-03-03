@@ -14,7 +14,6 @@ Suite Teardown              Close All Browsers
 Create Contacts
 
     Login to Application
-    ClickText    Contacts List
     ClickText    Cases List
     ClickText    New Case
     UseModal    On
@@ -22,6 +21,13 @@ Create Contacts
     ClickText    Next
     UseModal    Off
     TypeText    Subject    Sales
+
+*** Test Cases ***
+    ClickText    Cases
+    UseModal    Off
+    ClickText    C-0026275776
+    PickList    Case Origin    Marketplace
+    ClickText    Save
 
 
  
