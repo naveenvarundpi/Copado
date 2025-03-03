@@ -11,7 +11,7 @@ Resource                    TestCase/Login.robot
 Suite Setup            Open Browser                about:blank                 chrome
 Suite Teardown              Close All Browsers
 *** Variables ***
-${Case_Number}
+${Case_Number}=    C-0026275776
 *** Test Cases ***
 #Create Cases
 
@@ -40,8 +40,9 @@ Edit Cases
 *** Test Cases ***
 Search Cases
     Login to Application
-    ClickText    Cases List
-    TypeText    Search this list...    ${Case_Number}\n
+    ClickText    Cases
+    #ClickText    Cases List
+    TypeText    Search this list...    ${Case_Number}
     
 
     
