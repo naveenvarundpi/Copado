@@ -6,6 +6,7 @@
 Library                     QForce
 Library                      QWeb
 Library                     Screenshot
+Library    SeleniumLibrary
 Resource                    TestCase/Login.robot
 Suite Setup            Open Browser                about:blank                 chrome
 Suite Teardown              Close All Browsers
@@ -32,6 +33,13 @@ Edit Cases
     PickList    Case Origin    Client Email
     ClickText    Save
     ${Case_Number}=          GetText      xpath=(//span[@class='uiOutputText'])[3]
+    CloseBrowser
+
+*** Test Cases ***
+Search Cases
+    Login to Application
+    ClickText    Cases List
+    Input text     xpath=//input[@placeholder='Search this list...']    ${Case_Number} 
     
 
 
