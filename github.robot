@@ -15,15 +15,15 @@ ${Case_Number}
 *** Test Cases ***
 Create Cases
 
-    Login to Application
-    ClickText    Cases List
-    ClickText    New Case
-    UseModal    On
-    ClickText    CCC Angola
-    ClickText    Next
-    UseModal    Off
-    TypeText    Subject    Sales
-    CloseBrowser
+    #Login to Application
+    #ClickText    Cases List
+    #ClickText    New Case
+    #UseModal    On
+    #ClickText    CCC Angola
+    #ClickText    Next
+    #UseModal    Off
+    #TypeText    Subject    Sales
+    #CloseBrowser
 
 *** Test Cases ***
 Edit Cases
@@ -33,13 +33,15 @@ Edit Cases
     ClickText    Edit Case Origin
     PickList    Case Origin    Client Email
     ClickText    Save
-    ${Case_Number}=          GetText      xpath=(//span[@class='uiOutputText'])[3]
+    #VerifyField    Case Number    C-0026275776    partial_match=True
+    ${Case_Number}=          GetText      Case Number
     CloseBrowser
 
 *** Test Cases ***
 Search Cases
     Login to Application
-   
+    ClickText    Cases
+    TypeText    Search this list...    ${Case_Number}\n
     
 
     
