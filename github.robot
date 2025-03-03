@@ -34,7 +34,8 @@ Edit Cases
     PickList    Case Origin    Client Email
     ClickText    Save
     #VerifyField    Case Number    C-0026275776    partial_match=True
-    ${Case_Number}=          GetText      xpath=(//span[@class='uiOutputText'])[3]
+    ${Case_Number}=          GetText      Case Number
+    Log                      ${Case_Number}
     CloseBrowser
 
 *** Test Cases ***
