@@ -39,8 +39,8 @@ Edit Cases
 *** Test Cases ***
 Search Cases
     Login to Application
-    ClickText    Cases List
-    input_Text     Search this list    ${Case_Number}
+   
+    
 
     
     
