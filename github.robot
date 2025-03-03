@@ -22,6 +22,7 @@ Create Cases
     UseModal    Off
     TypeText    Subject    Sales
     CloseBrowser
+    Open Browser                about:blank                 chrome
 
 *** Test Cases ***
 Edit Cases
