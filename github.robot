@@ -24,8 +24,8 @@ Create Cases
 
 *** Test Cases ***
 Edit Cases
+    Login to Application
     ClickText    Cases
-    UseModal    Off
     ClickText    C-0026275776
     PickList    Case Origin    Marketplace
     ClickText    Save
