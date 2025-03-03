@@ -14,6 +14,7 @@ Suite Teardown              Close All Browsers
 Create Cases
 
     Login to Application
+    ClickText    ${Login_Button}
     ClickText    Cases List
     ClickText    New Case
     UseModal    On
@@ -21,11 +22,9 @@ Create Cases
     ClickText    Next
     UseModal    Off
     TypeText    Subject    Sales
-    CloseBrowser
 
 *** Test Cases ***
 Edit Cases
-    Login to Application
     ClickText    Cases List
     ClickText    C-0026275776
     ClickText    Edit Case Origin
