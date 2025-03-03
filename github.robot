@@ -15,15 +15,15 @@ ${Case_Number}=    C-0026275776
 *** Test Cases ***
 #Create Cases
 
-    #Login to Application
-    #ClickText    Cases List
-    #ClickText    New Case
-    #UseModal    On
-    #ClickText    CCC Angola
-    #ClickText    Next
-    #UseModal    Off
-    #TypeText    Subject    Sales
-    #CloseBrowser
+    Login to Application
+    ClickText    Cases List
+    ClickText    New Case
+    UseModal    On
+    ClickText    CCC Angola
+    ClickText    Next
+    UseModal    Off
+    TypeText    Subject    Sales
+    CloseBrowser
 
 *** Test Cases ***
 Edit Cases
@@ -33,7 +33,7 @@ Edit Cases
     ClickText    Edit Case Origin
     PickList    Case Origin    Client Email
     ClickText    Save
-    #VerifyField    Case Number    C-0026275776    partial_match=True
+    VerifyField    Case Number    C-0026275776    partial_match=True
     ${Case_Number}=          GetText      Case Number
     CloseBrowser
 
@@ -41,7 +41,7 @@ Edit Cases
 Search Cases
     Login to Application
     ClickText    Cases
-    #ClickText    Cases List
+    ClickText    Cases List
     TypeText    Search this list...    ${Case_Number}
     
 
