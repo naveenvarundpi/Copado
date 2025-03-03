@@ -4,6 +4,7 @@ Suite Setup            Open Browser                about:blank                 c
 
 *** Variables ***
 ${Login_Button}        xpath=//input[@value='Log In to Sandbox']
+${Case_Number}
     
 *** Keywords ***
 Login to Application
