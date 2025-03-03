@@ -10,7 +10,8 @@ Library    SeleniumLibrary
 Resource                    TestCase/Login.robot
 Suite Setup            Open Browser                about:blank                 chrome
 Suite Teardown              Close All Browsers
-
+*** Variables ***
+${Case_Number}
 *** Test Cases ***
 Create Cases
 
@@ -40,7 +41,7 @@ Search Cases
     Login to Application
     ClickText    Cases List
     input_Text     Search this list    ${Case_Number}
-    
+
     
     
 
