@@ -24,8 +24,7 @@ Create Cases
 
 *** Test Cases ***
 Edit Cases
-    Login to Application
-    ClickText    Cases
+    ClickText    Cases List
     ClickText    C-0026275776
     PickList    Case Origin    Marketplace
     ClickText    Save
