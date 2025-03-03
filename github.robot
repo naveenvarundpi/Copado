@@ -14,7 +14,6 @@ Suite Teardown              Close All Browsers
 Create Cases
 
     Login to Application
-    ClickText    ${Login_Button}
     ClickText    Cases List
     ClickText    New Case
     UseModal    On
