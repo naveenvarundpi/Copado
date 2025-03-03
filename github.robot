@@ -26,7 +26,8 @@ Create Cases
 Edit Cases
     ClickText    Cases List
     ClickText    C-0026275776
-    PickList    Case Origin    Marketplace
+    ClickText    Edit Case Origin
+    PickList    Case Origin    Client Email
     ClickText    Save
 
 
@@ -34,3 +35,6 @@ Edit Cases
    
     
 
+
+    
+    
