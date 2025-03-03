@@ -34,7 +34,7 @@ Edit Cases
     PickList    Case Origin    Client Email
     ClickText    Save
     #VerifyField    Case Number    C-0026275776    partial_match=True
-    ${Case_Number}=          GetText      Case Number
+    ${Case_Num}=          GetText      Case Number
     Log                      ${Case_Number}
     CloseBrowser
 
