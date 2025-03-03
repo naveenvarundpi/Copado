@@ -21,9 +21,11 @@ Create Cases
     ClickText    Next
     UseModal    Off
     TypeText    Subject    Sales
+    CloseBrowser
 
 *** Test Cases ***
 Edit Cases
+    Login to Application
     ClickText    Cases List
     ClickText    C-0026275776
     ClickText    Edit Case Origin
