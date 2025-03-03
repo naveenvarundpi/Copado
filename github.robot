@@ -12,8 +12,8 @@ Suite Setup            Open Browser                about:blank                 c
 Suite Teardown              Close All Browsers
 *** Variables ***
 ${Case_Number}
-*** Test Cases ***
-Create Cases
+#*** Test Cases ***
+#Create Cases
 
     #Login to Application
     #ClickText    Cases List
@@ -40,7 +40,7 @@ Edit Cases
 *** Test Cases ***
 Search Cases
     Login to Application
-    ClickText    Cases
+    ClickText    Cases List
     TypeText    Search this list...    ${Case_Number}\n
     
 
