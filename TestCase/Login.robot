@@ -1,6 +1,9 @@
 *** Settings ***
 Library                QForce
 Suite Setup            Open Browser                about:blank                 chrome
+
+*** Variables ***
+${Login_Button}        xpath=//input[@value='Log In to Sandbox']
     
 *** Keywords ***
 Login to Application
@@ -9,6 +12,6 @@ Login to Application
     TypeText          Username          hari.radhakrishnan@standardbank.co.za.bcwuat
     TypeSecret        Password          Sud682keen739!
     
-    ClickText          Log In to Sandbox
+    ClickText          ${Login_Button}
 
 
