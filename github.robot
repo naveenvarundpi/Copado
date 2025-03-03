@@ -12,7 +12,7 @@ Suite Setup            Open Browser                about:blank                 c
 Suite Teardown              Close All Browsers
 *** Variables ***
 ${Case_Number}
-#*** Test Cases ***
+*** Test Cases ***
 #Create Cases
 
     #Login to Application
