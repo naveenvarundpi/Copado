@@ -21,6 +21,7 @@ Create Cases
     ClickText    Next
     UseModal    Off
     TypeText    Subject    Sales
+    CloseBrowser
 
 *** Test Cases ***
 Edit Cases
