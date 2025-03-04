@@ -44,12 +44,13 @@ Search Cases
     UseModal    Off
 Edit Cases
     Login to Application
-    ClickText    Cases List
-    ClickText    C-0026275776
+    ClickText    Cases 
+    ClickText  C-0026275776  
+    PickList   Show Actions   Edit
     ClickText    Edit Case Origin
     PickList    Case Origin    Client Email
     ClickText    Save
-    #VerifyField    Case Number    C-0026275776    partial_match=True
+    VerifyField    Case Number    C-0026275776    partial_match=True
     ${Case_Num}=          GetText      Case Number
     Log                      ${Case_Num}
     CloseBrowser
@@ -71,8 +72,6 @@ Event Report
     TypeText   Time    08:30
     PickList   Meeting Audience  Internal
     PickList   Meeting Purpose  Core Client Team Meeting
-
-
 
       
 
