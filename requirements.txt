@@ -1,2 +1,0 @@
-robotframework-datadriver[XLS]
-robotframework-pandas
