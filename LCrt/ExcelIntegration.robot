@@ -10,15 +10,19 @@ Suite Teardown              Close All Browsers
 *** Variables ***
 ${cases}                    xpath=//a[@title='Cases']
 ${create_New_Contact_Chkbox}                            xpath=(//span[text()='Create New Contact']//preceding::span[contains(@class,'checkbox')])[last()]
+*** Keywords ***
+Login to Application
 *** Test Cases ***
+
 
 Learningsa
     [Documentation]         Test Case created using the QEditor
+  
 
-    GoTo                    https://standardbank--bcwuat.sandbox.lightning.force.com/lightning
-    TypeText                Username                    hari.radhakrishnan@standardbank.co.za.bcwuat
-    TypeSecret              Password                    Sud682keen739!
-    ClickText               Log In to Sandbox
+    # GoTo                    https://standardbank--bcwuat.sandbox.lightning.force.com/lightning
+    # TypeText                Username                    hari.radhakrishnan@standardbank.co.za.bcwuat
+    # TypeSecret              Password                    Sud682keen739!
+    # ClickText               Log In to Sandbox
     HoverText               ${cases}
     ClickText               ${cases}
     ClickText               New
