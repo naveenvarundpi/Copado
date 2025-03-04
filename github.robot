@@ -26,17 +26,6 @@ ${Case_Number}
     #CloseBrowser
 
 *** Test Cases ***
-Edit Cases
-    Login to Application
-    ClickText    Cases List
-    ClickText    C-0026275776
-    ClickText    Edit Case Origin
-    PickList    Case Origin    Client Email
-    ClickText    Save
-    #VerifyField    Case Number    C-0026275776    partial_match=True
-    ${Case_Num}=          GetText      Case Number
-    Log                      ${Case_Num}
-    CloseBrowser
 
 *** Test Cases ***
 Search Cases
@@ -51,6 +40,17 @@ Search Cases
     HoverText    Save
     ClickText    Save    partial_match=False
     UseModal    Off
+Edit Cases
+    Login to Application
+    ClickText    Cases List
+    ClickText    C-0026275776
+    ClickText    Edit Case Origin
+    PickList    Case Origin    Client Email
+    ClickText    Save
+    #VerifyField    Case Number    C-0026275776    partial_match=True
+    ${Case_Num}=          GetText      Case Number
+    Log                      ${Case_Num}
+    CloseBrowser
     
 
     
