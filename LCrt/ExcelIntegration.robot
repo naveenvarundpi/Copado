@@ -10,12 +10,13 @@ Suite Teardown              Close All Browsers
 *** Variables ***
 ${cases}                    xpath=//a[@title='Cases']
 ${create_New_Contact_Chkbox}                            xpath=(//span[text()='Create New Contact']//preceding::span[contains(@class,'checkbox')])[last()]
-*** Keywords ***
-Login to Application
+
 *** Test Cases ***
 
 
 Learningsa
+*** Keywords ***
+Login to Application
     [Documentation]         Test Case created using the QEditor
   
 
