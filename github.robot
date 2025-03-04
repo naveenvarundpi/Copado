@@ -13,17 +13,19 @@ Suite Teardown              Close All Browsers
 *** Variables ***
 ${Case_Number}
 *** Test Cases ***
-#Create Cases
+Create Cases
 
-    #Login to Application
-    #ClickText    Cases List
-    #ClickText    New Case
-    #UseModal    On
-    #ClickText    CCC Angola
-    #ClickText    Next
-    #UseModal    Off
-    #TypeText    Subject    Sales
-    #CloseBrowser
+    Login to Application
+    ClickText    Cases List
+    ClickText    New Case
+    UseModal    On
+    ClickText    CCC Angola
+    ClickText    Next
+    UseModal    Off
+    TypeText    Subject    Sales
+    CloseBrowser
+
+
 
 *** Test Cases ***
 
@@ -51,16 +53,27 @@ Edit Cases
     ${Case_Num}=          GetText      Case Number
     Log                      ${Case_Num}
     CloseBrowser
-    
-
-    
-    
-
-
- 
+Delete Cases
+    Login to Application
+    ClickText         Cases
    
-    
+
+Event Report Cases
+    [Documentation]   Test Case created using the QEditor
+    Login to Application
+    ClickText   Event Reports List
+    ClickText   New Event Report
+    ClickText   Next
+    TypeText    Agenda    Meeting
+    TypeText    Subject   Subject
+    PickList    Meeting Format    Conference Call
+    TypeText   Select a date for Date   05-Mar-2025
+    TypeText    Time    08:30
+    PickList   Meeting Audience  Internal
+    PickList   Meeting Purpose  Core Client Team Meeting
 
 
-    
+
+      
+
     
