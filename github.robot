@@ -58,7 +58,7 @@ Delete Cases
     ClickText         Cases
    
 
-Event Report Cases
+Event Report 
     [Documentation]   Test Case created using the QEditor
     Login to Application
     ClickText   Event Reports List
@@ -68,7 +68,7 @@ Event Report Cases
     TypeText    Subject   Subject
     PickList    Meeting Format    Conference Call
     TypeText   Select a date for Date   05-Mar-2025
-    TypeText    Time    08:30
+    TypeText   Time    08:30
     PickList   Meeting Audience  Internal
     PickList   Meeting Purpose  Core Client Team Meeting
 
