@@ -11,7 +11,7 @@ Suite Teardown              CloseAllBrowsers
 *** Test Cases ***
 Create Cases
 
-    Login to Application
+    # Login to Application
     ClickText               Cases List
     ClickText               New Case
     UseModal                On
