@@ -1,7 +1,6 @@
 
 *** Settings ***
 Library                     QForce
-
 Library                     Screenshot
 Library                     SeleniumLibrary
 Resource                    ../Resources/Common.resource
