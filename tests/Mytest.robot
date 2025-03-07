@@ -9,9 +9,9 @@ Suite Setup                 OpenBrowser                 about:blank    chrome
 Suite Teardown              CloseAllBrowsers
 
 *** Test Cases ***
-Create Cases
+Create 
 
-    # Login to Application
+     Login to Application
     ClickText               Cases List
     ClickText               New Case
     UseModal                On
